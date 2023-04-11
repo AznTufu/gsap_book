@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="checkbox-cover">
+    <input type="checkbox" id="checkbox-page1">
+    <input type="checkbox" id="checkbox-page2">
+    <input type="checkbox" id="checkbox-page3">
+    <div class="book">
+        <div class="cover">
+            <label for="checkbox-cover"></label>
+        </div>
+        <div class="page" id="page1">
+            <div class="front-page">
+                <p>Harry Potter, jeune orphelin, a été élevé par son oncle et sa tante dans des conditions hostiles1. À l'âge de onze ans, un demi-géant nommé Rubeus Hagrid lui apprend qu'il possède des pouvoirs magiques1 et que ses parents ont été assassinés,
+                    des années auparavant, par le mage noir Lord Voldemort.
+                </p>
+                <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="/asset/81oND6XuHsL._AC_SL1500_.jpg">
+                <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div class="front-page">
+                <h2>Page 2</h2>
+                <p>Au cours de l'été précédant la quatrième rentrée scolaire de Harry, la marque des ténèbres, signe de ralliement du mage noir Voldemort, apparaît dans le ciel après qu'une attaque de mangemorts a perturbé la Coupe du monde de quidditch1.
+                    L'école Poudlard accueille pour sa part un nouveau professeur de défense contre les forces du Mal (Alastor Maugrey, dit « Fol-Œil »)1 et un évènement légendaire, le Tournoi des Trois Sorciers
+                </p>
+                <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="/asset//image.jpg">
+                <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="front-page">
+                <h2>Page 3</h2>
+                <p>À la suite du départ des Dursley, les amis de Harry ainsi qu’une partie des membres de l’Ordre du Phénix se rendent au 4, Privet Drive afin d'emmener Harry au Terrier, en sécurité. Pour cela, ils expliquent un plan à Harry au cours duquel
+                    il y aurait sept Harry Potter à l'aide du Polynectar, ce qui préservera le vrai Harry en cas d'attaque, imminente selon Maugrey Fol Œil.
+                </p>
+            </div>
+        </div>
+        <div class="back-cover"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
