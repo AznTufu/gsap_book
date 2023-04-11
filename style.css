@@ -119,12 +119,6 @@ input {
     transform: translateX(200px);
 }
 
-#checkbox-cover:checked~.book .cover {
-    transition: transform 1.5s, z-index 0.5s 0.5s;
-    transform: rotateY(-180deg);
-    z-index: 1;
-}
-
 #checkbox-cover:checked~.book .page {
     box-shadow: 0 0 3px rgb(99, 98, 98);
 }

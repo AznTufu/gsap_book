@@ -4,9 +4,11 @@ const cover = document.querySelector('.cover');
 
 checkboxCover.addEventListener('change', () => {
     if (checkboxCover.checked) {
-        gsap.to(cover, { duration: 1, rotationY: 180 });
+        gsap.to(cover, { duration: 0.5, rotationY: -180 });
+        setTimeout(() => { cover.style.zIndex = "1"; }, 1000);
     } else {
-        gsap.to(cover, { duration: 1, rotationY: 0 });
+        gsap.to(cover, { duration: 0.5, rotationY: 0 });
+        cover.style.zIndex = "4";
     }
 });
 
@@ -17,9 +19,9 @@ const pages = document.querySelectorAll('.page');
 checkboxesPage.forEach((checkbox, index) => {
     checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
-            gsap.to(pages[index], { duration: 1, rotationY: 180 });
+            gsap.to(pages[index], { duration: 0.5, rotationY: -180 });
         } else {
-            gsap.to(pages[index], { duration: 1, rotationY: 0 });
+            gsap.to(pages[index], { duration: 0.5, rotationY: 0 });
         }
     });
 });
